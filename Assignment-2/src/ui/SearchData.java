@@ -61,7 +61,10 @@ public class SearchData extends javax.swing.JPanel {
         jButton7 = new javax.swing.JButton();
         btnFirstAvCar = new javax.swing.JButton();
 
+        setBackground(new java.awt.Color(153, 153, 153));
+
         lblSearchTitle.setFont(new java.awt.Font("Tahoma", 1, 27)); // NOI18N
+        lblSearchTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblSearchTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblSearchTitle.setText("Search Car Details");
 
@@ -87,6 +90,7 @@ public class SearchData extends javax.swing.JPanel {
         jScrollPane1.setViewportView(tblSearchBarData);
 
         btndsply.setText("Display All Records");
+        btndsply.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btndsply.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btndsplyActionPerformed(evt);
@@ -94,6 +98,7 @@ public class SearchData extends javax.swing.JPanel {
         });
 
         btnMainCert.setText("Maintenance Ceritificate Expired");
+        btnMainCert.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnMainCert.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMainCertActionPerformed(evt);
@@ -152,6 +157,7 @@ public class SearchData extends javax.swing.JPanel {
         });
 
         btnFirstAvCar.setText("First Available Car");
+        btnFirstAvCar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         btnFirstAvCar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFirstAvCarActionPerformed(evt);
@@ -242,7 +248,7 @@ public class SearchData extends javax.swing.JPanel {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(txtSCityAv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton7)))
-                .addContainerGap(276, Short.MAX_VALUE))
+                .addContainerGap(278, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

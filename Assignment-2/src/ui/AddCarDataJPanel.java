@@ -7,6 +7,7 @@ package ui;
 
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.regex.Matcher;
@@ -242,6 +243,21 @@ public class AddCarDataJPanel extends javax.swing.JPanel {
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
         // TODO add your handling code here:
+            try{
+                ArrayList<Integer> unqname = new ArrayList<>();
+                for(carfleet ncar: alldata.getAlldata()){
+                if(!(unqname.contains(ncar.getSerialNum()))){
+                unqname.add(ncar.getSerialNum());
+                }
+                }
+
+                if(unqname.contains(Integer.parseInt(txtSerialNum.getText()))) {
+
+                JOptionPane.showMessageDialog(this, "Enter unique serial number ");
+                }
+                } catch(Exception e){
+                System.out.println("Error in serial no check " +e);
+            }
             String carname = txtCarName.getText();
             String manufaturing_company = jComboCompany.getSelectedItem().toString();
             String carseat = jComboSeat.getSelectedItem().toString();
@@ -283,6 +299,7 @@ public class AddCarDataJPanel extends javax.swing.JPanel {
                                 JOptionPane.showMessageDialog(this,"Model Number is Incorrect!!");
                             }else{
                                 carfleet anc = alldata.addNewCarData();
+                                //carfleet anc1 = alldata.getAlldata();
                                 anc.setCarName(carname);
                                 anc.setCarManufacturer(manufaturing_company);
                                 anc.setManuYear(String.valueOf(year));

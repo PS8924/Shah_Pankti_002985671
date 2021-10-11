@@ -70,6 +70,10 @@ public class ViewCarData extends javax.swing.JPanel {
         lblLastFleet = new javax.swing.JLabel();
         txtVfleet = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(153, 153, 153));
+
+        lblViewTitle.setFont(new java.awt.Font("Tahoma", 1, 27)); // NOI18N
+        lblViewTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblViewTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblViewTitle.setText("View Car Details");
 
