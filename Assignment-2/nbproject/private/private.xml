@@ -2,13 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/D:/NEU-Assignments/JAVA/Lab_2/src/model/carAllDataList.java</file>
-            <file>file:/D:/NEU-Assignments/JAVA/Lab_2/src/ui/MainJFrame.java</file>
-            <file>file:/D:/NEU-Assignments/JAVA/Lab_2/src/ui/AddCarDataJPanel.java</file>
-            <file>file:/D:/NEU-Assignments/JAVA/Lab_2/src/ui/ViewCarData.java</file>
-            <file>file:/D:/NEU-Assignments/JAVA/Lab_2/src/ui/ViewUpdateData.java</file>
-            <file>file:/D:/NEU-Assignments/JAVA/Lab_2/src/model/carfleet.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
