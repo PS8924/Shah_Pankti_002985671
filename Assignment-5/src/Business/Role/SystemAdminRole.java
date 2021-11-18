@@ -4,12 +4,14 @@
  */
 package Business.Role;
 
-import Business.EcoSystem;
-
-import Business.UserAccount.UserAccount;
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
+import Business.EcoSystem;
+import Business.Menu.MenuDirectory;
+import Business.Order.OrderDirectory;
 import Business.Restaurant.RestaurantDirectory;
+
+import Business.UserAccount.UserAccount;
 import userinterface.SystemAdminWorkArea.SystemAdminWorkAreaJPanel;
 import javax.swing.JPanel;
 
@@ -20,8 +22,8 @@ import javax.swing.JPanel;
 public class SystemAdminRole extends Role{
 
     @Override
-    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem system, CustomerDirectory CustomerDirectory, DeliveryManDirectory deliveryManDirectory, RestaurantDirectory restaurantDirectory) {
-        return new SystemAdminWorkAreaJPanel(userProcessContainer, system, CustomerDirectory, deliveryManDirectory, restaurantDirectory);
+    public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, EcoSystem system, CustomerDirectory customerDirectory, RestaurantDirectory restaurantDirectory,DeliveryManDirectory deliveryManDirectory, MenuDirectory menuDirectory, OrderDirectory orderDirectory) {
+        return new SystemAdminWorkAreaJPanel(userProcessContainer, system, customerDirectory, restaurantDirectory, deliveryManDirectory,menuDirectory,orderDirectory);
     }
     
 }

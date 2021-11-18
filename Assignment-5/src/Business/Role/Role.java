@@ -6,10 +6,11 @@ package Business.Role;
 
 import Business.Customer.CustomerDirectory;
 import Business.DeliveryMan.DeliveryManDirectory;
-import Business.Restaurant.RestaurantDirectory;
 import Business.EcoSystem;
+import Business.Menu.MenuDirectory;
+import Business.Order.OrderDirectory;
 
-import Business.Organization;
+import Business.Restaurant.RestaurantDirectory;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 
@@ -25,7 +26,7 @@ public abstract class Role {
         DeliveryMan("Delivery"),
         SysAdmin("Sysadmin");
         
-        private String value;
+        private final String value;
         private RoleType(String value){
             this.value = value;
         }
@@ -44,8 +45,10 @@ public abstract class Role {
             UserAccount account,  
             EcoSystem business,
             CustomerDirectory customerDirectory,
+            RestaurantDirectory restaurantDirectory,
             DeliveryManDirectory deliveryManDirectory,
-            RestaurantDirectory restaurantDirectory);
+            MenuDirectory menuDirectory,
+            OrderDirectory orderDirectory);
 
     @Override
     public String toString() {
