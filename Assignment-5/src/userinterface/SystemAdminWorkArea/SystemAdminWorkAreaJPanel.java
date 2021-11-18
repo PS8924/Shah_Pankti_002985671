@@ -88,22 +88,24 @@ public class SystemAdminWorkAreaJPanel extends javax.swing.JPanel {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(152, 152, 152)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jBtnManageCustomers)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jBtnManageRest)
-                        .addComponent(btnManageFDeliveryPanel)))
+                    .addComponent(jBtnManageRest)
+                    .addComponent(btnManageFDeliveryPanel)
+                    .addComponent(jBtnManageCustomers))
                 .addContainerGap(164, Short.MAX_VALUE))
         );
+
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {btnManageFDeliveryPanel, jBtnManageCustomers, jBtnManageRest});
+
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(78, 78, 78)
+                .addGap(36, 36, 36)
                 .addComponent(btnManageFDeliveryPanel)
-                .addGap(45, 45, 45)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jBtnManageCustomers)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
                 .addComponent(jBtnManageRest)
-                .addGap(98, 98, 98))
+                .addContainerGap(202, Short.MAX_VALUE))
         );
 
         jSplitPane.setRightComponent(jPanel2);
