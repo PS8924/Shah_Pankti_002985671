@@ -60,27 +60,27 @@ public class RestaurantWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 140, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 290, -1));
 
-        manageEmployeeJButton.setText("Menu");
+        manageEmployeeJButton.setText("Manage Menu Here");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 140, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 290, -1));
 
-        manageOrganizationJButton.setText("Orders");
+        manageOrganizationJButton.setText("Check Orders");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 130, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 290, -1));
 
-        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        enterpriseLabel.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
         enterpriseLabel.setText("Restaurant :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, 30));
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 190, 30));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 790, 400));
     }// </editor-fold>//GEN-END:initComponents
 

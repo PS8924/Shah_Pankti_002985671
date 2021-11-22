@@ -111,9 +111,9 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
         });
         add(processJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 390, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
         jLabel1.setText("Update Delivery Details");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 70, -1, 20));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, 20));
 
         jLabel2.setText("Mark Delivery Complete:");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, -1, -1));
@@ -125,7 +125,7 @@ public class DeliveryManWorkAreaJPanel extends javax.swing.JPanel {
                 jButton1ActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void processJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_processJButtonActionPerformed

@@ -28,7 +28,7 @@ public class MenuDirectory {
 
     public void add(String restaurantId, String name, double price, String description) {     
         Item item = new Item();
-        item.setItemNo("MenuItem"+(menuDirectory.size()+1));
+        item.setItemNo(""+(menuDirectory.size()+1));
         item.setItemName(name);
         item.setPrice(price);
         item.setRestaurantNo(restaurantId);

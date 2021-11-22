@@ -44,10 +44,6 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="brnConfirmOrder" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -55,14 +51,12 @@
                   <Component id="scrollOrderList" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="410" max="-2" attributes="0"/>
-                              <Component id="lblOrderList" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="btnAssignDeliveryMan" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="brnConfirmOrder" linkSize="1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="btnAssignDeliveryMan" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
-                              <Component id="btnBack" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnBack" linkSize="1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
+                              <Component id="lblOrderList" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -76,18 +70,18 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="lblOrderList" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblOrderList" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
               <Component id="scrollOrderList" min="-2" pref="97" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="brnConfirmOrder" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
               <Component id="scrollDeliveryMan" min="-2" pref="116" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btnBack" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnAssignDeliveryMan" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
+              <Component id="btnAssignDeliveryMan" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="70" max="32767" attributes="0"/>
           </Group>
       </Group>
@@ -97,7 +91,7 @@
     <Component class="javax.swing.JLabel" name="lblOrderList">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Lucida Grande" size="18" style="1"/>
+          <Font name="Lucida Grande" size="24" style="3"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Order List"/>
       </Properties>

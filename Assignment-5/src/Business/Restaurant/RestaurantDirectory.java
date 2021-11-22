@@ -29,7 +29,7 @@ public class RestaurantDirectory {
     }
     
     public void add(Restaurant restaurant) {
-       restaurant.setRestaurantID("Restaurant"+(restaurantDirectory.size()+1));
+       restaurant.setRestaurantID(""+(restaurantDirectory.size()+1));
        restaurantDirectory.add(restaurant);
     }
     

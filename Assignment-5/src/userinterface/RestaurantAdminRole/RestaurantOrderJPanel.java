@@ -112,7 +112,7 @@ public class RestaurantOrderJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(204, 204, 255));
 
-        lblOrderList.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        lblOrderList.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
         lblOrderList.setText("Order List");
 
         tblOrderList.setModel(new javax.swing.table.DefaultTableModel(
@@ -190,40 +190,39 @@ public class RestaurantOrderJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(brnConfirmOrder)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(scrollDeliveryMan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1041, Short.MAX_VALUE)
                     .addComponent(scrollOrderList)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnAssignDeliveryMan)
+                            .addComponent(brnConfirmOrder)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(410, 410, 410)
-                                .addComponent(lblOrderList))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnAssignDeliveryMan)
-                                .addGap(43, 43, 43)
-                                .addComponent(btnBack)))
+                                .addComponent(btnBack)
+                                .addGap(77, 77, 77)
+                                .addComponent(lblOrderList)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
+
+        layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {brnConfirmOrder, btnBack});
+
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblOrderList)
-                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnBack)
+                    .addComponent(lblOrderList))
+                .addGap(19, 19, 19)
                 .addComponent(scrollOrderList, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(brnConfirmOrder)
                 .addGap(32, 32, 32)
                 .addComponent(scrollDeliveryMan, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnBack)
-                    .addComponent(btnAssignDeliveryMan))
+                .addComponent(btnAssignDeliveryMan)
                 .addContainerGap(70, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
