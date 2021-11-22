@@ -60,7 +60,7 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
 
         setBackground(new java.awt.Color(204, 204, 255));
 
-        lblCreateDeliveryMan.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
+        lblCreateDeliveryMan.setFont(new java.awt.Font("Lucida Grande", 3, 24)); // NOI18N
         lblCreateDeliveryMan.setText("Create Delivery Man");
 
         lblUsername.setText("Username:");
@@ -155,7 +155,7 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnBack)
                     .addComponent(btnCreate))
-                .addContainerGap(89, Short.MAX_VALUE))
+                .addContainerGap(81, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -200,7 +200,7 @@ public class AddDeliveryManJPanel extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_btnCreateActionPerformed
     public void clearAllFields(){
-        txtDeliveryName.setText("");
+            txtDeliveryName.setText("");
             txtContactNo.setText("");
             txtUsername.setText("");
             txtPassword.setText("");

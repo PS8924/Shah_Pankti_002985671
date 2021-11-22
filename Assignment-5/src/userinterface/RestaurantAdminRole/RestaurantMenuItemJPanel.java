@@ -180,9 +180,17 @@ public class RestaurantMenuItemJPanel extends javax.swing.JPanel {
             menuDirectory.updateItem(item.getItemNo(),itemName,ingrediants,price);
             restrictEditOnFields();
             JOptionPane.showMessageDialog(null, "Menu item successfully!");
+            clearAllFeilds();
         }
     }//GEN-LAST:event_btnSaveActionPerformed
 
+    public void clearAllFeilds(){
+        txtItemPrice.setText("");
+        txtItemNo.setText("");
+        txtItemName.setText("");
+        txtIngrediants.setText("");
+    }
+    
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
         txtItemName.setEditable(true);

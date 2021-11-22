@@ -60,7 +60,7 @@ public class RestaurantWorkAreaJPanel extends javax.swing.JPanel {
                 userJButtonActionPerformed(evt);
             }
         });
-        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 320, 290, -1));
+        add(userJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 290, -1));
 
         manageEmployeeJButton.setText("Manage Menu Here");
         manageEmployeeJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -68,7 +68,7 @@ public class RestaurantWorkAreaJPanel extends javax.swing.JPanel {
                 manageEmployeeJButtonActionPerformed(evt);
             }
         });
-        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 290, -1));
+        add(manageEmployeeJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 290, -1));
 
         manageOrganizationJButton.setText("Check Orders");
         manageOrganizationJButton.addActionListener(new java.awt.event.ActionListener() {
@@ -76,11 +76,11 @@ public class RestaurantWorkAreaJPanel extends javax.swing.JPanel {
                 manageOrganizationJButtonActionPerformed(evt);
             }
         });
-        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 290, -1));
+        add(manageOrganizationJButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, 290, -1));
 
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 3, 24)); // NOI18N
-        enterpriseLabel.setText("Restaurant :");
-        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 190, 30));
+        enterpriseLabel.setText("Restaurant  Workarea:");
+        add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 300, 30));
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 790, 400));
     }// </editor-fold>//GEN-END:initComponents
 

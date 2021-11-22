@@ -89,9 +89,9 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(btnBack)
-                        .addGap(89, 89, 89)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(lblAddItem)
-                        .addContainerGap(375, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -108,7 +108,7 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
                                 .addComponent(txtItemName, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(312, 312, 312))))
             .addGroup(layout.createSequentialGroup()
-                .addGap(346, 346, 346)
+                .addGap(316, 316, 316)
                 .addComponent(btnSave)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -134,9 +134,9 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPrice)
                     .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSave)
-                .addContainerGap(182, Short.MAX_VALUE))
+                .addContainerGap(184, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -158,6 +158,7 @@ public class AddMenuItemJPanel extends javax.swing.JPanel {
             menuDirectory.add(restaurantNo, itemName, price, ingrediants);
             system.setMenuDirectory(menuDirectory);
             JOptionPane.showMessageDialog(null, "Item added sucessfully!");
+            clearAllFields();
         }
 
     }//GEN-LAST:event_btnSaveActionPerformed

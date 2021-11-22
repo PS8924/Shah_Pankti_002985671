@@ -159,17 +159,17 @@ public class RestaurantOrderJPanel extends javax.swing.JPanel {
 
         tblDeliveryMan.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null},
+                {null, null, null},
+                {null, null, null},
+                {null, null, null}
             },
             new String [] {
-                "Delivery Man Name", "Contact No", "Address", "Delivery Man Id"
+                "Delivery Man Name", "Contact No", "Delivery Man Id"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false
+                false, false, false
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -260,7 +260,7 @@ public class RestaurantOrderJPanel extends javax.swing.JPanel {
                     if (deliveryRow >= 0) {
                         System.out.println("In here"+ deliveryRow);
                     order.setDeliveryMan(deliveryManDirectory.getDeliveryManDirectory().get(deliveryRow));
-                    String empId = (String) tblDeliveryMan.getValueAt(deliveryRow,3);
+                    String empId = (String) tblDeliveryMan.getValueAt(deliveryRow,2);
                     UserAccount user = business.getUserAccountDirectory().getUserByEmployeeNo(empId);
                     order.setReceiver(user);
                     order.setStatus("Preparing Order");
