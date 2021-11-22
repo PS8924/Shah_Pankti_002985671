@@ -101,9 +101,33 @@ public class EcoSystem extends Organization {
         }
         return false;
     }
+    
+    public Boolean checkValidNameFormat(String name)
+    {
+        String regex = "^[a-zA-Z]+";
+        Pattern pattern = Pattern.compile(regex);
+
+        Matcher matcher = pattern.matcher(name);
+        if (matcher.matches()) {
+            return true;
+        }
+        return false;
+    }
+    
+    public Boolean checkValidZipcodeFormat(String zipcode)
+    {
+        String regex = "^[0-9]{5}+";
+        Pattern pattern = Pattern.compile(regex);
+
+        Matcher matcher = pattern.matcher(zipcode);
+        if (matcher.matches()) {
+            return true;
+        }
+        return false;
+    }
     public Boolean checkValidEmailFormat(String email)
     {
-        String regex = "^(.+)@(.+)$";
+        String regex = "^[a-zA-Z0-9]+@[a-zA-Z]+\\.[a-zA-Z]+";
         Pattern pattern = Pattern.compile(regex);
 
         Matcher matcher = pattern.matcher(email);

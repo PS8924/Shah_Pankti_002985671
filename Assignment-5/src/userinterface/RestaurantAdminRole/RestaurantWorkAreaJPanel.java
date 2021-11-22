@@ -81,8 +81,6 @@ public class RestaurantWorkAreaJPanel extends javax.swing.JPanel {
         enterpriseLabel.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         enterpriseLabel.setText("Restaurant :");
         add(enterpriseLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, 30));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/uberEatsWallpaper.png"))); // NOI18N
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 790, 400));
     }// </editor-fold>//GEN-END:initComponents
 

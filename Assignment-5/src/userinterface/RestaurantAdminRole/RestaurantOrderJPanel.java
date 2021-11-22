@@ -69,11 +69,11 @@ public class RestaurantOrderJPanel extends javax.swing.JPanel {
         DefaultTableModel model = (DefaultTableModel) tblDeliveryMan.getModel();
         model.setRowCount(0);
         for (DeliveryMan deliveryMan : deliveryManDirectory.getDeliveryManDirectory()) {
-                Object[] row = new Object[3];
-                row[0] = deliveryMan.getDeliveryPersonName();
-                row[1] = deliveryMan.getDeliveryPersonPhoneNo();
-                row[2] = deliveryMan.getDeliveryPersonId();
-                model.addRow(row);
+            Object[] row = new Object[3];
+            row[0] = deliveryMan.getDeliveryPersonName();
+            row[1] = deliveryMan.getDeliveryPersonPhoneNo();
+            row[2] = deliveryMan.getDeliveryPersonId();
+            model.addRow(row);
         }
     }
 

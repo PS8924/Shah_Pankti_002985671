@@ -13,9 +13,18 @@ public class Customer {
     private String customerNo;
     private String customerName;
     private String customerContactNo;
+    private String customerGender;
     private String customerStreet;
     private String customerZipcode;
     private String customerEmail;
+
+    public String getCustomerGender() {
+        return customerGender;
+    }
+
+    public void setCustomerGender(String customerGender) {
+        this.customerGender = customerGender;
+    }
 
     public String getCustomerNo() {
         return customerNo;
